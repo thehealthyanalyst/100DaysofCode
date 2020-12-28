@@ -33,4 +33,4 @@ for num in range(special_char):
 password_char = upper_list + lower_list + numerals_list + special_char_list
 random.shuffle(password_char)
 password = ''.join(item for item in password_char)
-return(password)
+print(password)
