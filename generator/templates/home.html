@@ -1,0 +1,70 @@
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+<div class="container text-center">
+
+  <h1 align='center'>Password Generator</h1>
+
+  <br>
+
+  <form class="" action="{% url 'password' %}" method="post" align='center'>
+    {%csrf_token%}
+    <h3>Pick the number of characters of each type:</h3>
+    Numbers: <select class="" name="numerals">
+      <option value="0">0</option>
+      <option value="1" selected='selected'>1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+      <option value="6">6</option>
+      <option value="7">7</option>
+      <option value="8">8</option>
+      <option value="9">9</option>
+    </select>
+    <br>
+    <br>
+    Upper case letters: <select class="" name="upper_case">
+      <option value="0">0</option>
+      <option value="1" selected='selected'>1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+      <option value="6">6</option>
+      <option value="7">7</option>
+      <option value="8">8</option>
+      <option value="9">9</option>
+    </select>
+    <br>
+    <br>
+    Lower case letters: <select class="" name="lower_case">
+      <option value="0">0</option>
+      <option value="1" selected='selected'>1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+      <option value="6">6</option>
+      <option value="7">7</option>
+      <option value="8">8</option>
+      <option value="9">9</option>
+    </select>
+    <br>
+    <br>
+    Special characters: <select class="" name="special_char">
+      <option value="0">0</option>
+      <option value="1" selected='selected'>1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+      <option value="6">6</option>
+      <option value="7">7</option>
+      <option value="8">8</option>
+      <option value="9">9</option>
+    </select>
+    <br>
+    <br>
+    <input type="submit" name="" value="Generate Password" class='btn btn-primary'>
+  </form>
+</div>
